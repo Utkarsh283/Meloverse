@@ -1,0 +1,143 @@
+@media screen and (max-width: 930px ) {
+    main{
+        width: 97%;
+        height: 96%;
+    }
+
+    .main-section nav, .main-section .artist-content, .main-section .popular-songs, .main-section .popular-artists{
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 866px ) {
+    main{
+        width: 98%;
+        height: 97%;
+    }
+    .side-bar{
+        display: none;
+        position: absolute;
+        width: 35%;
+        height: 97%;
+        z-index: 5;
+    }
+
+    .side-bar .side-bar-back-btn{
+        display: inline;
+    }
+
+    .main-section{
+        width: 100%;
+    }
+    .main-section nav .playlist-icon {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .main-section nav ul {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        background: var(--main-bg-color);
+        padding: 1em;
+        z-index: 5;
+        top: 10%;
+        left: -1%;
+        border-radius: 15px;
+    }
+
+    .main-section nav ul li span {
+        width: 85%;
+    }
+
+    .main-section nav .hamburger-icon {
+        display: inline;
+    }
+
+    .main-section nav .search {
+        width: 45%;
+    }
+
+    .main-section .artist-content .buttons button{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .side-bar{
+        width: 60%;
+    }
+
+    .main-section {
+        height: 91%;
+    }
+
+    .main-section .artist-content{
+        height: 30%;
+    }
+
+    .main-section .artist-content h1{
+        font-size: 2rem;
+    }
+
+    .main-section .artist-content h4{
+        font-size: 0.8rem;
+    }
+
+    .main-section .artist-content .buttons{
+        margin-top: 1.5em;
+    }
+
+    .main-section .artist-content .buttons button{
+        width: 40%;
+        margin-left: 1em;
+    }
+    .player-section {
+        position: fixed;
+        top: 90vh;
+    }
+
+    .player-section .wave-container{
+        position: absolute;
+        bottom: 160%;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+        width: 24px;
+    }
+
+    .player-section .icons{
+        position: absolute;
+        bottom: 102%;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 154px;
+    }
+
+    .player-section .icons::before{
+        content: "";
+        position: absolute;
+        left: -13px;
+        width: 180px;
+        height: 160px;
+        border-radius: 50% 50% 0 0;
+        background: var(--player-section-bg-color);
+        z-index: -1;
+        opacity: 0.9;
+    }
+    .player-section .song-slider-container{
+        width: 30%;
+    }
+    .player-section .volume-control-container{
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .player-section .song-details{
+        display: none;
+    }
+}
